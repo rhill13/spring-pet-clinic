@@ -10,7 +10,7 @@
 		<!-- lookup parent from repository --></parent>
 	<groupId>biz.rookware</groupId>
 	<artifactId>sfg-pet-clinic</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<name>sfg-pet-clinic</name>
 	<description>Pet Clinin using Spring Boot</description>
 	<properties>
@@ -35,7 +35,7 @@
 
 	<scm>
 		<developerConnection>scm:git:git@github.com:rhill13/spring-pet-clinic.git</developerConnection>
-	  <tag>sfg-pet-clinic-0.0.1</tag>
+	  <tag>HEAD</tag>
   </scm>
 
 	<modules>
