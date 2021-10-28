@@ -5,10 +5,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping({"/vets", "/vets/index", "/vets/index.html"})
+@RequestMapping("/vets")
 public class VetController {
     
-    @GetMapping
+    @GetMapping({"", "/", "/index", "/index.html"})
     public String listVets() {
         return "vets/index";
     }
