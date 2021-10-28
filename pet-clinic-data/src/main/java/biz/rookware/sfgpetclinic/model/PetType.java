@@ -1,6 +1,6 @@
 package biz.rookware.sfgpetclinic.model;
 
-public class PetType {
+public class PetType extends BaseEntity {
 
     // Properties
     private String name;

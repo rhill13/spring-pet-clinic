@@ -2,7 +2,7 @@ package biz.rookware.sfgpetclinic.model;
 
 import java.time.LocalDate;
 
-public class Pet {
+public class Pet extends BaseEntity {
     
     // Properties
     private PetType petType;
