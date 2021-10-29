@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import biz.rookware.sfgpetclinic.services.OwnerService;
 
 @Controller
-@RequestMapping("/owner")
+@RequestMapping("/owners")
 public class OwnerController {
     
     private final OwnerService ownerService;
