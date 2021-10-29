@@ -3,9 +3,15 @@ package biz.rookware.sfgpetclinic.services.map;
 import java.util.Set;
 
 import biz.rookware.sfgpetclinic.model.Owner;
-import biz.rookware.sfgpetclinic.services.CrudService;
+import biz.rookware.sfgpetclinic.services.OwnerService;
 
-public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements CrudService<Owner, Long> {
+public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
+
+    @Override
+    public Owner findByLastName(String lastName) {
+        // TODO Auto-generated method stub
+        return null;
+    }
 
     @Override
     public void delete(Owner object) {

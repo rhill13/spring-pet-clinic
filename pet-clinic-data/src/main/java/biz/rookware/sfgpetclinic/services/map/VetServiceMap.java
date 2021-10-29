@@ -3,9 +3,9 @@ package biz.rookware.sfgpetclinic.services.map;
 import java.util.Set;
 
 import biz.rookware.sfgpetclinic.model.Vet;
-import biz.rookware.sfgpetclinic.services.CrudService;
+import biz.rookware.sfgpetclinic.services.VetService;
 
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
     @Override
     public void delete(Vet object) {
