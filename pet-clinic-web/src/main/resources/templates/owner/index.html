@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Owners</title>
-</head>
-<body>
-    
+  </head>
+  <body>
     <h1 th:text="'List of Owners'"></h1>
 
-</body>
+    <table>
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr th:each="owner : ${owners}">
+          <td th:text="${owner?.id}">xxx</td>
+          <td th:text="${owner?.firstName}">xxx</td>
+          <td th:text="${owner?.lastName}">xxx</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
 </html>
