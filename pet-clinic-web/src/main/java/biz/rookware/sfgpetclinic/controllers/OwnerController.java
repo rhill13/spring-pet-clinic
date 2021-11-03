@@ -24,4 +24,9 @@ public class OwnerController {
         model.addAttribute("owners", ownerService.findAll());
         return "owner/index";
     }
+
+    @GetMapping("/find")
+    public String findOwners() {
+        return "notimplemented";
+    }
 }
