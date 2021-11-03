@@ -5,10 +5,10 @@ import java.util.Set;
 import org.springframework.stereotype.Service;
 
 import biz.rookware.sfgpetclinic.model.Pet;
-import biz.rookware.sfgpetclinic.services.CrudService;
+import biz.rookware.sfgpetclinic.services.PetService;
 
 @Service
-public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long> {
+public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
 
     @Override
     public void delete(Pet object) {
